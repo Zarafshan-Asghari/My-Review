@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>accordan</title>
+  </head>
+  <body>
+    <!-- global container -->
+    <div class="flex items-center justify-center min-h-screen bg-rose-100">
+      <div
+        class="flex flex-col space-y-4 p-6 md:p-10 rounded-xl shadow-lg bg-white hover:shadow-xl transition-all duration-500"
+      >
+        <!-- first people -->
+        <div class="flex flex-col justify-center items-center space-y-4">
+          <!-- img -->
+          <div class="relative">
+            <img
+              id="image"
+              src="./images/customer-3.jpg"
+              class="rounded-full relative z-20 object-fill"
+              alt=""
+            />
+            <div
+              class="absolute rounded-full bg-blue-500 w-32 h-32 z-10 -top-1 -right-2 -bottom-1"
+            ></div>
+            <div
+              class="absolute z-30 w-10 h-10 bg-blue-500 text-white text-center text-2xl font-serif font-bold items-center justify-center flex top-2 rounded-full -left-4 pb-2"
+            >
+              <span>,,</span>
+            </div>
+          </div>
+
+          <h3
+            id="name"
+            class="tracking-widest font-semibold text-xl capitalize"
+          >
+            sara shmetman
+          </h3>
+          <!-- position -->
+          <span id="job" class="uppercase text-blue-600">the boss</span>
+
+          <p class="max-w-sm md:max-w-xl text-center" id="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+            recusandae facere aspernatur fugit velit consequuntur inventore
+            aperiam consequatur temporibus suscipit perspiciatis, nesciunt vitae
+            minus, aliquid harum odio dolorum. Quas, quo.
+          </p>
+        </div>
+
+        <!-- buttons -->
+        <div class="flex justify-center mt-2 gap-6">
+          <!-- <img
+            id="after"
+            src="./images/vector-l.png"
+            alt=""
+            class="rounded-full p-4 hover:shadow-md hover:transition hover:duration-200"
+          />
+          <img
+            id="before"
+            src="./images/vector-r.png"
+            class="rounded-full p-4 hover:shadow-md hover:transition hover:duration-200"
+            alt=""
+          /> -->
+          <!-- pre -->
+          <ion-icon
+            id="pre-btn"
+            name="arrow-round-forward"
+            class="w-6 h-6 p-2 rotate-180 rounded-full hover:shadow-md hover:transition hover:duration-200 hover:text-blue-500 focus:text-blue-600"
+          ></ion-icon>
+          <!-- next  -->
+          <ion-icon
+            id="next-btn"
+            name="arrow-round-forward"
+            class="w-6 h-6 p-2 rounded-full hover:shadow-md hover:transition hover:duration-200 hover:text-blue-500 focus:text-blue-600"
+          ></ion-icon>
+        </div>
+
+        <div class="flex items-center justify-center mt-2">
+          <button
+            id="random-btn"
+            class="bg-blue-600 text-white p-2 rounded-md border-4 font-semibold border-t-blue-600 border-l-blue-600 border-b-blue-900 border-r-blue-900 hover:bg-blue-100 hover:text-blue-600 duration-200"
+          >
+            display random
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- script -->
+    <script src="script.js"></script>
+  </body>
+</html>
